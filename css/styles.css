@@ -231,6 +231,7 @@ li {
 }
   
 
+/* Початок модального вікна*/
 .backdrop{
     z-index: 10;
     position: fixed;
@@ -262,8 +263,6 @@ li {
     border-radius: 4px;
 
     transition:  1s cubic-bezier(0.4, 0, 0.2, 1) ;
-
-
 }
 
 .model-button{
@@ -482,24 +481,25 @@ fill: var(--background-button-hover);
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
-
-
 }
+
+/* Кінець модалки і секції Caption*/
+
 /*Секкція Особливості Advantage*/
 
 .advantage{
    padding-bottom: 0;
 }
-.advantage-list{
+.advantage__list{
     display: flex;
 }
-.advantage-item{
+.advantage__item{
     width: 270px;
 }
-.advantage-item:not(:first-child) {
+.advantage__item:not(:first-child) {
       margin-left: 30px;
 }
-.advantage-blok {
+.advantage__blok {
     display: flex;
     height: 120px;
     background: var(--background-button-portfolio);
@@ -534,7 +534,7 @@ fill: var(--background-button-hover);
      border: 0;
      clip: rect(0000);
 }
-.advantage-item h3 {
+.advantage__title {
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -542,7 +542,7 @@ fill: var(--background-button-hover);
     margin-bottom: 10px;
 }
 
-.advantage-list p{
+.advantage__content {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--page-text-color);
@@ -551,7 +551,7 @@ fill: var(--background-button-hover);
 
 /*Початок секії Чем мы занимаесмя*/
 
-.features-title{
+.features__title{
     font-weight: bold;
     font-size: 36px;
     line-height: 1.1;
@@ -560,7 +560,7 @@ fill: var(--background-button-hover);
     color: var(--primary-text-color);
     margin-bottom: 50px;
 }
-.features-list{
+.features__list{
     display: flex;
     /*justify-content: space-between;
     list-style: none;*/
@@ -568,21 +568,21 @@ fill: var(--background-button-hover);
     align-items: center;
 }
 
-.features-item:not(:first-child) {
+.features__item:not(:first-child) {
       margin-left: 30px;
 }
-.features-item{
+.features__item{
     position: relative;
 }
 
 
- .features-picture {
+ .features__picture {
      display: block;
      max-width: 100%;
      height: auto;
  }
 
- .features-thumb{
+ .features__thumb{
      position: absolute;
      bottom: 0;
      left: 0;
@@ -590,16 +590,16 @@ fill: var(--background-button-hover);
      width: 100%;
  }
 
-.features-thumb p{
-font-weight: bold;
-font-size: 14px;
-line-height: 1.1;
-text-align: center;
-justify-content: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--title-text-color);
-padding: 27px 82px;
+.features__content{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    padding: 27px 82px;
 }
 
 
@@ -614,7 +614,7 @@ padding: 27px 82px;
 
 }
 
-.team-title{
+.team__title{
     font-weight: bold;
     font-size: 36px;
     line-height: 1.1;
@@ -623,26 +623,32 @@ padding: 27px 82px;
     color: var(--primary-text-color);
     margin-bottom: 50px;
 }
-.team-list{
+.team__list{
     display: flex;
     /*justify-content: space-between;*/
     margin-left: auto;
     margin-right: auto;
 }
-.team-details {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.team-item{
+
+.team__item{
     width: calc((100% - 90px) / 4);
     border-radius: 0px 0px 4px 4px;
     background-color:var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
-
 }
-.team-item:not(:first-child) {
+
+.team__item:not(:first-child) {
     margin-left: 30px;
+}
+
+.team__picture{
+    max-width: 100%;
+    height: auto; 
+}
+
+.team-details {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-name{
@@ -665,11 +671,7 @@ padding: 27px 82px;
     margin-bottom: 16px;
 
 }
-.team-picture{
-    max-width: 100%;
-    height: auto;
-   
-}
+
 
 .social-list{
     display: flex;
