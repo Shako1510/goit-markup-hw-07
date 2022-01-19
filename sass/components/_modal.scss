@@ -9,6 +9,8 @@
 
     transition:  1s cubic-bezier(0.4, 0, 0.2, 1) opacity ;
 
+
+
     
 }
 .backdrop.is-hidden{
@@ -31,7 +33,7 @@
     transition:  1s cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
-.model-button{
+.modal-button{
     position: absolute;
     top: 8px;
     right: 8px;
@@ -50,15 +52,19 @@
     cursor: pointer;
 
     transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-    
+
+    &:hover{
+    fill: var(--background-button-hover);
+}
 }
 
-.model-button:hover{
-fill: var(--background-button-hover);
-}
 
 
-.modal-form  p{
+.modal-form{
+    width: 528px;
+    padding: 40px;
+
+    & p{
     font-weight: bold;
     font-size: 20px;
     line-height: 1.1;
@@ -69,11 +75,6 @@ fill: var(--background-button-hover);
     margin-bottom: 12px;
 
 }
-
-.modal-form{
-    width: 528px;
-    padding: 40px;
-    /*outline: 1px solid teal;*/
 }
 
 .form-fild{
@@ -83,17 +84,8 @@ fill: var(--background-button-hover);
     display: flex;
     flex-direction: column;
     
-}
 
-.fild-blok{
-    position: relative;
-    width: 448px;
-    height: 40px;
-    
-    margin-bottom: 10px;
-   
-}
- .fild-label
+     &fild-label
  {
     font-size: 12px;
     line-height: 1.1;
@@ -101,6 +93,18 @@ fill: var(--background-button-hover);
     color: var(--page-text-color);
     margin-bottom: 4px;
 }
+}
+
+
+
+.fild-blok{
+    position: relative;
+    width: 448px;
+    height: 40px;  
+    margin-bottom: 10px;
+   
+}
+
 
  .form-input
 {
@@ -112,23 +116,23 @@ fill: var(--background-button-hover);
     border-radius: 4px;
 
      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-   
-}
-.form-input:hover,
- .form-input:focus{
+
+    &:hover,
+    &:focus{
      outline: none;
     border: 1px solid  var(--accent-text-color);
     cursor: pointer;
 }
 
-.form-input:hover + .ooo-icons,
-.form-input:focus + .ooo-icons
+    &:hover + .ooo-icons,
+    &t:focus + .ooo-icons
 {
     fill: var(--background-button-hover);
+}   
 }
 
 
-.ooo-icons{
+.input-icons{
     position: absolute;
     top: 50%;
     left: 12px;

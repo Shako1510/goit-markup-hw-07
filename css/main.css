@@ -48,12 +48,9 @@ li {
   --background-color-main:#2F303A;
   --background-button-portfolio: #F5F4FA;
   --background-button-hover: #2196F3;
-  --box-shadow-portfolio:0px 4px 4px 0px #00000040;
-  --box-shadow-portlolio-button:0px 2px 2px 0px #0000001F,
-
- 0px 1px 2px 0px #00000014,
-
- 0px 3px 1px 0px #0000001A;
+  --box-shadow-portfolio-cards: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --box-shadow-portfolio:0px 4px 4px 0px rgba(0, 0, 0, 0.251);
+  --box-shadow-portlolio-button:0px 2px 2px 0px #0000001F,0px 1px 2px 0px #00000014,0px 3px 1px 0px #0000001A;
   --box-shadow-button-hover: 0px 2px 2px 0px #0000001F;
   -webkit-box-shadow: 0px 1px 2px 0px #00000014;
           box-shadow: 0px 1px 2px 0px #00000014;
@@ -246,6 +243,8 @@ li {
   -webkit-border-radius: 4px;
           border-radius: 4px;
   cursor: pointer;
+
+  
 }
 
 .caption__button {
@@ -290,7 +289,7 @@ li {
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.model-button {
+.modal-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -321,7 +320,7 @@ li {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.model-button:hover {
+.modal-button:hover {
   fill: var(--background-button-hover);
 }
 
@@ -392,12 +391,12 @@ li {
   cursor: pointer;
 }
 
-.form-input:hover + .ooo-icons,
-.form-input:focus + .ooo-icons {
+.form-input:hover + .input-icons,
+.form-input:focus + .input-icons {
   fill: var(--background-button-hover);
 }
 
-.ooo-icons {
+.input-icons {
   position: absolute;
   top: 50%;
   left: 12px;

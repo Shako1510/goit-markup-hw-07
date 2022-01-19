@@ -1,15 +1,19 @@
 .advantage{
    padding-bottom: 0;
-}
-.advantage__list{
+
+&__list{
     display: flex;
 }
+}
+
 .advantage__item{
     width: 270px;
-}
-.advantage__item:not(:first-child) {
+
+&__item:not(:first-child) {
       margin-left: 30px;
 }
+}
+
 .advantage__blok {
     display: flex;
     height: 120px;
