@@ -5,12 +5,13 @@
     padding-bottom: 60px;
     background: var(--background-color-main);
  
-}
-.footer .container{
+    & .container{
     display: flex;
     align-items: baseline;
   
 }
+}
+
 .footer-logo{
     color: var(--title-text-color);
 }
@@ -32,12 +33,14 @@
 }
 .footer-list{
     display: inline-block;
+
+    & > li {
+    display: block;
+}
     
 }
 
-.footer-list > li {
-display: block;
-}
+
 .footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -52,19 +55,19 @@ display: block;
 
      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 
-}
-.footer-link:hover,
-.footer-link:focus{
+     &:hover,
+     &:focus{
     color: var(--accent-text-color);
 
 }
 
-.follow{
-    margin-left: 70px;
-   
 }
 
-.follow h3{
+
+.follow{
+    margin-left: 70px;
+
+    & h3{
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -73,14 +76,20 @@ display: block;
     color: var(--title-text-color);
     margin-bottom: 20px;
 }
+   
+}
+
+
 
 .follow-list{
     display: flex;
     justify-content: space-between;
-}
-.follow-list li:not(:last-child){
+
+   & li:not(:last-child){
     margin-right: 10px;
 }
+}
+
 .follow-link{
     display: flex;
     width: 44px;
@@ -91,20 +100,31 @@ display: block;
     background: rgba(255, 255, 255, 0.1);
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+    &:hover{
+    background-color: var(--background-button-hover);
+}
   
 }
 .follow-icon{
     fill: var(--title-text-color);
 }
-.follow-link:hover{
-    background-color: var(--background-button-hover);
-}
 
 .foter-form{
     margin-left: auto;
+
+    &__title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    margin-bottom: 20px;
+}
 }
 
-.foter-form button {
+.footer-button {
     display: inline-flex;
     padding: 10px 28px;
     margin-left: 12px;
@@ -122,23 +142,12 @@ display: block;
     line-height: 1.8;
     letter-spacing: 0.06em;
 
-
-}
-.foter-form h3{
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-text-color);
-    margin-bottom: 20px;
-}
-.form-footer-icon{
+    .footer-button__icon{
     margin-left: 10px;
 }
-
+}
     
-.foter-form input{
+.footer-input{
     width: 358px;
      background-color: var(--background-color-main);
      color: var(--title-text-color);
@@ -148,15 +157,14 @@ display: block;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
  
-    
-}
-
-
-.foter-form input::placeholder{
+    &::placeholder{
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     
 
+}    
 }
+
+

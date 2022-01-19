@@ -15,12 +15,12 @@
     justify-content: center;
     margin: 0 auto 50px;
   
-   
-}
-.button-list .button-item + .button-item {
+    & .button-item + .button-item {
     margin-left: 8px;
 
 }
+}
+
 
 .button-list button {
     font-weight: 500;
@@ -35,23 +35,17 @@
     padding: 6px 22px;
 
     transition: 250ms  cubic-bezier(0.4, 0, 0.2, 1)  background, box-shadow 250ms  cubic-bezier(0.4, 0, 0.2, 1), 250ms  cubic-bezier(0.4, 0, 0.2, 1) color ;
-}
-.button-list button:hover,
-.button-list button:focus
+
+    &:hover,
+    &:focus
 {
     background: var(--background-button-hover);
     color: var(--title-text-color);
     box-shadow: var(--box-shadow-portlolio-button);
     cursor: pointer;
-   /* border-radius: var(--portfolio-border-radius);*/
     border: none;
  
 }
-/*.button-list button:focus {
-    background: var(--background-button-hover);
-    color: var(--title-text-color);
-    box-shadow: var(--box-shadow-portlolio-button);
-    border-radius: var(--portfolio-border-radius);
-   
- 
-}*/   
+}
+
+  

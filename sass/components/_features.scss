@@ -15,11 +15,13 @@
     align-items: center;
 }
 
-.features__item:not(:first-child) {
-      margin-left: 30px;
-}
+
 .features__item{
     position: relative;
+
+    &:not(:first-child) {
+      margin-left: 30px;
+}
 }
 
 
